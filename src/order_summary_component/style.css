@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --dark-blue:hsl(223, 47%, 23%);
+    --sat-blue:hsl(224, 23%, 55%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --bright-blue:hsl(245, 75%, 52%);
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: "Red Hat Display",sans-serif;
+    margin:0;
+}
+
+img{
+   width:100%;
+}
+
+.container{
+    min-height: 100vh;
+    background-image: url("./img/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin:auto;
+    width: 480px;
+    background-color:white;
+    border-radius:20px;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+.card__info{
+    padding:1em 2em;
+    text-align: center;
+}
+
+.card__info p{
+    color:gray;
+    margin-bottom: 1em;
+}
+.card__title{
+    margin:0;
+    color:var(--dark-blue);
+    font-weight: 900;
+    font-size:28px;
+
+}
+.btn{
+    display: inline-block;
+}
+
+.card__plan{
+    padding:1em;
+    display:flex;
+    justify-content: space-between;
+    border-radius:20px;
+    background-color: var(--very-pale-blue);
+    align-items: center;
+}
+
+.card__plan a{
+    font-weight: 900;
+    color:var(--bright-blue)
+}
+
+.card__plan a:hover{
+    opacity: 0.8;
+}
+.info__music{
+    display: flex;
+    align-items: center;
+}
+
+.music__img{
+    margin-right: 1em;
+}
+
+.plan__title{
+    color:var(--dark-blue);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.btn__order{
+    text-decoration: none;
+    display: block;
+    width:100%;
+    padding:1em 2em;
+    border-radius: 20px;
+    font-size: 18px;
+    font-size:18px;
+    font-weight: 900;
+}
+
+.btn__pay{
+    background-color: var(--bright-blue);
+    color:white;
+    margin:2em auto 0.5em;
+}
+
+.btn__cancel{
+    margin:0.5em auto 0.5em;
+    color:gray;
+}
+
+.btn__order:hover{
+    opacity:0.7;
+}
+
+.btn__cancel:hover{
+    color:black;
+}
+@media (min-width:500px) {
+    
+    .container{
+        background-image: url("./img/pattern-background-desktop.svg");
+    }
+}
