@@ -29,5 +29,9 @@ h1{
     color:white
 }
 
+.container__links ul li{
+    margin:1em 0;
+}
+
 
 
