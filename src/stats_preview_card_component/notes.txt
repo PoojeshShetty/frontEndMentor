@@ -1,0 +1,4 @@
+- mix blend mode to give violet color shade to image
+- vertical align middle to remove image and div bottom space
+- flex-direction row reverse to make image stack to right
+- give width and height 100% to fully cover the div
